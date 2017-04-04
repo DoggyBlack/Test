@@ -52,3 +52,4 @@ gulp.task('build', gulp.series('clean',gulp.parallel('js','compress','styles', '
 
 gulp.watch('*.less', gulp.series('styles'));
 gulp.watch('*.jade', gulp.series('jade'));
+gulp.watch('js/*.js', gulp.series('js'));

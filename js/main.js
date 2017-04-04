@@ -1,15 +1,23 @@
 $(document).ready(function() {
+    $(".mobile-menu__close").hide();
     $("#content").hide();
+
     $("#menu").click(function() {
         if ($("#content").is(":hidden")) {
-
             $("#content").show("slow");
+            $(".mobile-menu__close").show("slow");
 
         } else {
 
             $("#content").hide("slow");
+            $(".mobile-menu__close").hide("slow");
 
         }
+    $(".mobile-menu__close").click(function(){
+        $("#content").hide("slow");
+        $(".mobile-menu__close").hide("slow");
+      });
+
     });
 
 

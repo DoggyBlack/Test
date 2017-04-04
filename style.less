@@ -1,7 +1,17 @@
+@font-face {
+  font-family: GothamProB;
+  src: url('fonts/GothaProBol.otf');
+}
+@font-face {
+  font-family: GothamProM;
+  src: url('fonts/GothaProMed');
+  font-weight: 400;
+}
+
 body{
   width: 100%;
   height: 100%;
-  font-family: GothaProBla;
+  font-family: GothamProB;
   color: #fff;
   overflow-x: hidden;
   position:relative;
@@ -57,6 +67,7 @@ body{
     text-align: right;
   }
   &__schedule{
+    font-family: GothamProM;
     font-size: 10px;
   }
 }
@@ -91,9 +102,11 @@ body{
     text-shadow: 0px 0px 13px rgba(53, 14, 86, 0.75);
   }
   &__paragraph{
+    font-family: GothamProM;
     margin-bottom: 65px;
   }
   &__button{
+    font-family: GothamProM;
     line-height: 45px;
     text-align: center;
     width: 200px;
@@ -111,6 +124,14 @@ body{
 .footer{
   margin-top: -50px;
   width: 100%;
+  &__background{
+    width: 200%;
+    height: 76px;
+    margin-top: -26px;
+    margin-left: -139px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+  }
   &__logos{
     display: flex;
     justify-content: space-between;
@@ -131,6 +152,14 @@ body{
   position: absolute;
   background-color: rgba(0, 0, 0, 0.95);
   opacity: 0.95;
+  &__close{
+    cursor: pointer;
+    width: 10px;
+    z-index: 2;
+    margin-left: 85%;
+    margin-top: 43px;
+    position: absolute;
+  }
   & a{
     font-size: 24px;
     line-height: 42px;
@@ -219,6 +248,11 @@ body{
   body{
     min-height: 500px;
   }
+  .mobile-menu{
+    &__close{
+      margin-left: 85%;
+    }
+  }
   .wrapper{
     max-width: 717px;
     width: 100%;
@@ -245,7 +279,7 @@ body{
 }
 @media screen and (max-width: 480px){
   body{
-    min-height: 400px;
+    min-height: 500px;
   }
   .wrapper{
     max-width: 430px;
@@ -253,30 +287,32 @@ body{
   }
   .header{
     &__item-wrapper{
-      width: 45%
     }
     &__logo{
       margin-top: 100px;
     }
     &__contacts{
-      font-size: 10px;
+      width: 150%;
+      font-size: 15px;
+      margin-left: -50%;
     }
     &__schedule{
-      font-size: 8px;
+      font-size: 12px;
     }
   }
   .content{
     &__heading{
+      width: 80%;
       margin-bottom: 20px;
       margin-top: 100px;
-      font-size: 15px;
+      font-size: 28px;
     }
     &__paragraph{
-      margin-bottom: 10px;
-      font-size: 12px;
+      margin-bottom: 30px;
+      font-size: 20px;
     }
     &__button{
-      font-size: 11px;
+      font-size: 15px;
       width: 200px;
     }
     & span{
@@ -305,4 +341,9 @@ body{
 }
 .active{
   background-color: #fff;
+}
+.mobile-menu{
+  &__close{
+    margin-left: 80%;
+  }
 }

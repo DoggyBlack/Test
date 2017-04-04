@@ -4,6 +4,7 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="stylesheet" href="reset.css")
     link(rel="stylesheet" href="style.css")
+    link(rel="stylesheet" href="fonts.css")
     title Slivki
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
   body
@@ -15,8 +16,10 @@ html
         input(type="text" placeholder="+7(123)45-67-89").calculation__item.calculation__item-phone
         .calculation__request Оставить заявку
         .calculation__close#close Закрыть
-    
+      
+      .mobile-menu__close#close Закрыть      
       .mobile-menu#content
+
         ul.list
           li.list-item
             a(href="#") О нас
@@ -73,6 +76,7 @@ html
             |Узнайте сколько клиентов Вы получите в следующем месяце
           .content__button#calculation Получить расчет
         .footer
+          .footer__background
           .footer__logos#slide
             img.footer__image(src="img/kaza.png")
             img.footer__image(src="img/allo.png")

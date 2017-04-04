@@ -1,0 +1,12 @@
+@font-face {
+  font-family: GothamProB;
+  src: url(GothaProBla.otf);
+  font-weight: 700;
+  font-size: normal;
+}
+@font-face {
+  font-family: gothamProM;
+  src: url('GothaProMed');
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvbnRzLmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBQTtFQUNBLHlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTs7QUFFRjtFQUNFLHVCQUFBO0VBQ0EsU0FBUyxjQUFUIiwic291cmNlc0NvbnRlbnQiOlsiQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBHb3RoYW1Qcm9CO1xuICBzcmM6IHVybChHb3RoYVByb0JsYS5vdGYpO1xuICBmb250LXdlaWdodDogNzAwO1xuICBmb250LXNpemU6IG5vcm1hbDtcbn1cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogZ290aGFtUHJvTTtcbiAgc3JjOiB1cmwoJ0dvdGhhUHJvTWVkJyk7XG59XG4iXSwiZmlsZSI6ImZvbnRzLmNzcyJ9 */
